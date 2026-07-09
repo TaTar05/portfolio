@@ -1,0 +1,148 @@
+<!doctype html>
+<!-- ระบุว่าเอกสารนี้เป็น HTML5 -->
+<html lang="th">
+
+<head>
+    <!-- กำหนดชุดอักขระเป็น UTF-8 เพื่อรองรับภาษาไทย -->
+    <meta charset="utf-8">
+
+    <!-- ชื่อเว็บที่แสดงบนแท็บเบราว์เซอร์ -->
+    <title>Portfolio | Tar Wongsathon </title>
+
+    <!-- ทำให้เว็บแสดงผลได้ดีบนมือถือ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- เรียกใช้ Bootstrap 5 สำหรับช่วยจัด Layout และ Responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- เรียกใช้ฟอนต์จาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/img-favicon/favicon.svg" type="image/svg+xml">
+
+    <!-- เรียกใช้ไฟล์ style.css -->
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <!-- Navbar (เมนูนำทาง) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <!-- โลโก้ / ชื่อเว็บไซต์ -->
+            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+
+            <!-- ปุ่มเมนูสำหรับมือถือ -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><!-- <span class="navbar-toggler-icon"></span> --></button>
+
+            <!-- รายการเมนู -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- ลิงก์ไปยังแต่ละ section -->
+                    <li class="nav-item"><a class="nav-link" href="#home">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">ทักษะ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">การศึกษา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">ประสบการณ์</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">ผลงาน</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- หน้าแรก (Hero Section เอามาใช้ที่ดูเด่น ) -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1> Tar <span class="text-warning"> Wongsathon </span></h1>
+            <p class="mt-3">
+                นักศึกษาสาขา คอมพิวเตอร์ธุรกิจ <br> อาชีพที่อยากทำหลังเรียนจบ:<b>Web Developer</b>
+            </p>
+
+            <!-- ปุ่มเลื่อนไปดูผลงาน -->
+            <a href="#portfolio" class="btn-main mt-3 d-inline-block">ดูผลงาน</a>
+        </div>
+    </section>
+
+    <!-- เกี่ยวกับเรา -->
+    <section id="about">
+        <div class="container">
+            <h1 class="section-title">เกี่ยวกับเรา</h1>
+            <p class="text-center">
+                สวัสดีครับผม นายวงศธร ทั่งทอง ผมเป็นนักศึกษาคอมพิวเตอร์ธุรกิจ มีความสนใจด้านการพัฒนาเว็บไซต์และระบบสารสนเทศ ผมมีเป้าหมายในการเป็น Web Developer ที่สามารถพัฒนาระบบที่ใช้งานได้จริงและเป็นประโยชน์ต่อผู้ใช้ ผมมีความรับผิดชอบ ชอบเรียนรู้สิ่งใหม่ และทำงานร่วมกับผู้อื่นได้ดี
+            </p>
+        </div>
+    </section>
+
+    <!-- ทักษะ -->
+    <!-- Container คือการครอบเนื้อหาเพราะ -->
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">ทักษะ</h2>
+
+            <!-- แสดงทักษะเป็นกล่อง -->
+            <div class="skill-boxes">
+                <div class="skill-box">HTML</div>
+                <div class="skill-box">CSS</div>
+                <div class="skill-box">Bootstrap</div>
+                <div class="skill-box">Python</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- การศึกษา -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">การศึกษา</h2>
+            <div class="d-flex justify-content-center">
+                <img src="img/Powocho.png" alt="powocho" class="" />
+            </div>
+            <div class="text-center">ประกาศนียบัตรวิชาชีพ ระดับปวช</div>
+        </div>
+    </section>
+
+    <!-- ประสบการณ์ & การฝึกอบรม -->
+    <section id="experience" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">ประสบการณ์ & การฝึกอบรม</h2>
+
+            <img src="img/1T0A6709.JPG" class="img-fluid">
+            <h5>
+                <p class="text-center"><br/>อบรมค่ายพี่ช่วยน้อง เราจะเดินไปด้วยกัน</p>
+            </h5>
+
+
+        </div>
+    </section>
+
+    <!-- ผลงาน -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">ผลงาน</h2>
+
+            <!-- แสดงผลงานเป็นรูป -->
+            <div class="portfolio portfolio-center">
+                <div class="col-md-4">
+                    <img src="img/three.jpg" class="img-fluid">
+                    <p class="text-center">รองชนะเลิศอันดับ 2 ในการแข่งขัน Microsoft Power BI <br/>(ACBA 2025)</p>
+                    <img src="img/ww.jpg" class="img-fluid">
+                    <p class="text-center">ได้รับเกียรติบัตร จิตอาสาช่วยงานส่วนรวม <br/>มีคุณธรรม จริยธรรม เสียสละ</p>
+                    <img src="img/KSU21629.JPG" class="img-fluid">
+                    <p class="text-center">ได้รับเกียรติบัตร ICDL Asia Digital Challenge 2025</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Portfolio | Tar Wongsathon</p>
+    </footer>
+
+    <!-- เรียกใช้ JavaScript ของ Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
