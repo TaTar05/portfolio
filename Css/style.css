@@ -172,26 +172,29 @@ section {
    Portfolio
  */
 
-.portfolio img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-.portfolio img:hover {
-    transform: scale(1.05);
-}
-
-.portfolio p {
-    margin-top: 15px;
-    font-weight: 500;
-}
-
-.portfolio-center {
+.portfolio-container {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
 }
+
+.portfolio-column {
+    width: 40%;
+}
+
+.portfolio-column img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-top: 20px;
+}
+
+.portfolio-column p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 
 /* 
